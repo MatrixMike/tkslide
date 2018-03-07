@@ -1,0 +1,5 @@
+Wed Mar 07 23:30:28 AEDT 2018 
+
+Found this repo and started using the snobol4 examples
+maybe soon I will get tcl working...
+
