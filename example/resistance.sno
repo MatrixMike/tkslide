@@ -1,11 +1,18 @@
+* Changed a word to make increase the electronics usefullness 
+* enter a series of resistor values. The program calculates the cummulative value when they are 
+* connected in series and parallel.
+* Does not yet work when reading from a file.
+
+* Wed Mar 07 23:09:34 AEDT 2018 
+*
 	parallel = 0.
-	serial = 0.
+	series   = 0.
 while	read = trim(input)	:f(printout)
-	serial = serial + read
+	series = series + read
 	parallel = parallel + ( 1. / read )	:(while)
 
 printout	Rpar = 1. / parallel
-	Rser = serial
+	Rser = series
 	output = "Parallel: " Rpar
-	output = "Serial  : " Rser
+	output = "Series  : " Rser
 end
