@@ -11,7 +11,8 @@ while	read = trim(input)	:f(printout)
 	series = series + read
 	parallel = parallel + ( 1. / read )	:(while)
 
-printout	Rpar = 1. / parallel
+printout	
+*    Rpar = 1. / parallel
 	Rser = series
 	output = "Parallel: " Rpar
 	output = "Series  : " Rser
