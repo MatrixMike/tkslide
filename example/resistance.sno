@@ -1,4 +1,4 @@
-* Changed a word to make increase the electronics usefullness 
+* Changed a word to make increase the electronics usefulness 
 * enter a series of resistor values. The program calculates the cummulative value when they are 
 * connected in series and parallel.
 * Does not yet work when reading from a file.

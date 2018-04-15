@@ -3,6 +3,7 @@
 	notefile = "notes.txt"
 while 	args = args host(2,a = a + 1) " "	:s(while)
 	ident(args)	:f(append)
+* s success , f failure
 noparms	input(.notes,io_findunit(),,notefile)	:s(display)f(end)
 display	output = notes	:s(display)
 	endfile(notes)	:(end)
