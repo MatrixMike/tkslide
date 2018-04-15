@@ -12,5 +12,6 @@
 * starting from a known character within the string and of m length;
 	string break(known_char) len(m) . output
 * starting from a known substring within the string and of m length. 
-	string break(known_str) len(m) . output 
+	string break(known_str) len(m) . output
+	      &DUMP = 1
 end

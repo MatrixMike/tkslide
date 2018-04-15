@@ -1,4 +1,4 @@
-#! /usr/local/bin/snobol4 -b
+*#! /usr/local/bin/snobol4 -b
 	a = 2
 	notefile = "notes.txt"
 while 	args = args host(2,a = a + 1) " "	:s(while)
@@ -9,4 +9,5 @@ display	output = notes	:s(display)
 append	output(.notes,io_findunit(),"A",notefile)	:f(end)
 	notes = date()
 	notes = char(9) args
+	      &DUMP = 1
 end

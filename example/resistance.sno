@@ -16,4 +16,5 @@ printout
 	Rser = series
 	output = "Parallel: " Rpar
 	output = "Series  : " Rser
+	&DUMP = 1
 end

@@ -3,4 +3,5 @@
 	p2 = point(10,40)
 	output = "Point 1 (" x(p1) "," y(p1) ")"
 	output = "Point 2 (" x(p2) "," y(p2) ")"
+	&DUMP = 1
 end
