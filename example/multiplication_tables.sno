@@ -1,9 +1,9 @@
 	max = 12
 	y = 0
-next_y	x = 0; y = ?(lt(y,max)) y + 1	:f(nend)
-next_x	x = ?(lt(x,max)) x + 1	:f(out)
-	line = line char(9) x * y	:(next_x)
-out	line rem . output = y char(9) "|"	:(next_y)
+next_y	x = 0; y = ?(lt(y,max)) y + 1		:f(nend)
+next_x	x = ?(lt(x,max)) x + 1				:f(out)
+	line = line char(9) x * y				:(next_x)
+out	line rem . output = y char(9) "|"		:(next_y)
 * no compilation errors but DUMP does nor produce usual output
 * changed goto to force before real END
 nend

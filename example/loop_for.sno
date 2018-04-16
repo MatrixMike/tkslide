@@ -1,6 +1,20 @@
-outer	a = ?lt(a,5) a + 1	:f(end)
-	t = ""; b = a
-inner	t = t ?(b = (gt(b,0) b - 1)) "*"	:s(inner)
-	output = t	:(outer)
+	
+		rep = 3
+newout
+outer	a = ?lt(a,5) a + 1					:f(pend)
+		t = ""; b = a
+inner	
+		t = t ?(b = (gt(b,0) b - 1)) "*"	:s(inner)
+		output = t							:(outer)
+		rep = ?(rep = (gt(rep,0) rep - 1))	:(newout)
+pend
 
+*		&DUMP = 1
 end
+* nested loops, inner and outer ; look for the : and () at end of line
+* a ; can be used to allow multiple statements on one line
+* for readability and thus self teaching I place labels on separate lines [inner]
+* outer loop increments a from 1 to 5 , sets t to a blank string and b becomes a copy of a
+* inner loop : b is decremented and tested against 0 and 
+* each time it cycles a * is concatenated to t
+
